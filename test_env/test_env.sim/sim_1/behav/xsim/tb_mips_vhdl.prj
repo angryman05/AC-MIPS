@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../test_env.srcs/sources_1/new/IDecoder.vhd" \
+"../../../../test_env.srcs/sources_1/new/IFetch.vhd" \
+"../../../../test_env.srcs/sources_1/new/MEM.vhd" \
+"../../../../test_env.srcs/sources_1/new/MPG.vhd" \
+"../../../../test_env.srcs/sources_1/new/MainControl.vhd" \
+"../../../../test_env.srcs/sources_1/new/SSD.vhd" \
+"../../../../test_env.srcs/sources_1/new/inst_EX.vhd" \
+"../../../../test_env.srcs/sources_1/new/test_env.vhd" \
+"../../../../test_env.srcs/sim_1/new/test_env_sim.vhd" \
+
+# Do not sort compile order
+nosort

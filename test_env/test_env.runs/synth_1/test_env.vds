@@ -1,0 +1,386 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Apr 24 15:24:56 2026
+# Process ID         : 8552
+# Current directory  : D:/faculta/An2sem2/ac/test_env/test_env.runs/synth_1
+# Command line       : vivado.exe -log test_env.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_env.tcl
+# Log file           : D:/faculta/An2sem2/ac/test_env/test_env.runs/synth_1/test_env.vds
+# Journal file       : D:/faculta/An2sem2/ac/test_env/test_env.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-RUN61G9
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz
+# CPU Frequency      : 3792 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 17069 MB
+# Swap memory        : 6442 MB
+# Total Virtual      : 23512 MB
+# Available Virtual  : 4328 MB
+#-----------------------------------------------------------
+source test_env.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/faculta/An2sem2/ac/test_env/test_env.srcs/utils_1/imports/synth_1/test_env.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/faculta/An2sem2/ac/test_env/test_env.srcs/utils_1/imports/synth_1/test_env.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top test_env -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 33588
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 974.035 ; gain = 469.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_env' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:14]
+INFO: [Synth 8-3491] module 'SSD' declared at 'D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/SSD.vhd:6' bound to instance 'display' of component 'SSD' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'SSD' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/SSD.vhd:13]
+INFO: [Synth 8-226] default block is never used [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/SSD.vhd:33]
+WARNING: [Synth 8-614] signal 'digits' is read in the process but is not in the sensitivity list [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/SSD.vhd:31]
+INFO: [Synth 8-226] default block is never used [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/SSD.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (0#1) [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/SSD.vhd:13]
+INFO: [Synth 8-3491] module 'MPG' declared at 'D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MPG.vhd:5' bound to instance 'mepegeu0' of component 'MPG' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'MPG' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MPG.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (0#1) [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MPG.vhd:11]
+INFO: [Synth 8-3491] module 'MPG' declared at 'D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MPG.vhd:5' bound to instance 'mepegeu1' of component 'MPG' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:136]
+INFO: [Synth 8-3491] module 'MPG' declared at 'D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MPG.vhd:5' bound to instance 'mepegeu2' of component 'MPG' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:137]
+INFO: [Synth 8-3491] module 'IFetch' declared at 'D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/IFetch.vhd:5' bound to instance 'inst_IF' of component 'IFetch' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'IFetch' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/IFetch.vhd:16]
+INFO: [Synth 8-226] default block is never used [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/IFetch.vhd:65]
+INFO: [Synth 8-226] default block is never used [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/IFetch.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'IFetch' (0#1) [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/IFetch.vhd:16]
+INFO: [Synth 8-3491] module 'MainControl' declared at 'D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MainControl.vhd:4' bound to instance 'inst_MC' of component 'MainControl' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'MainControl' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MainControl.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'MainControl' (0#1) [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MainControl.vhd:17]
+INFO: [Synth 8-3491] module 'IDecoder' declared at 'D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/IDecoder.vhd:5' bound to instance 'inst_DEC' of component 'IDecoder' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'IDecoder' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/IDecoder.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'IDecoder' (0#1) [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/IDecoder.vhd:19]
+INFO: [Synth 8-3491] module 'inst_EX' declared at 'D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/inst_EX.vhd:6' bound to instance 'Ex_inst' of component 'inst_EX' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'inst_EX' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/inst_EX.vhd:20]
+INFO: [Synth 8-226] default block is never used [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/inst_EX.vhd:32]
+INFO: [Synth 8-226] default block is never used [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/inst_EX.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'inst_EX' (0#1) [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/inst_EX.vhd:20]
+INFO: [Synth 8-3491] module 'MEM' declared at 'D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MEM.vhd:5' bound to instance 'ram_mem' of component 'MEM' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'MEM' [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MEM.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'MEM' (0#1) [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MEM.vhd:15]
+INFO: [Synth 8-226] default block is never used [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:224]
+INFO: [Synth 8-226] default block is never used [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:237]
+INFO: [Synth 8-256] done synthesizing module 'test_env' (0#1) [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:14]
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd:143]
+WARNING: [Synth 8-3917] design test_env has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design test_env has port led[14] driven by constant 0
+WARNING: [Synth 8-3917] design test_env has port led[13] driven by constant 0
+WARNING: [Synth 8-3917] design test_env has port led[12] driven by constant 0
+WARNING: [Synth 8-3917] design test_env has port led[11] driven by constant 0
+WARNING: [Synth 8-7129] Port btn[4] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module test_env is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1081.719 ; gain = 577.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1081.719 ; gain = 577.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1081.719 ; gain = 577.281
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1081.719 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/imports/Downloads/NexysA7_test_env.xdc]
+Finished Parsing XDC File [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/imports/Downloads/NexysA7_test_env.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/imports/Downloads/NexysA7_test_env.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_env_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_env_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_env_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_env_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1162.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1162.234 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1162.234 ; gain = 657.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1162.234 ; gain = 657.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1162.234 ; gain = 657.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1162.234 ; gain = 657.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---RAMs : 
+	               2K Bit	(64 X 32 bit)          RAMs := 1     
++---Muxes : 
+	 257 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 6     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   8 Input    2 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design test_env has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design test_env has port led[14] driven by constant 0
+WARNING: [Synth 8-3917] design test_env has port led[13] driven by constant 0
+WARNING: [Synth 8-3917] design test_env has port led[12] driven by constant 0
+WARNING: [Synth 8-3917] design test_env has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design test_env has port led[10] driven by constant 0
+WARNING: [Synth 8-7129] Port btn[4] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module test_env is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module test_env is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1162.234 ; gain = 657.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------------+-----------+----------------------+--------------+
+|test_env    | inst_DEC/mem_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-565] redefining clock 'sys_clk_pin'
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1272.574 ; gain = 768.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1344.816 ; gain = 840.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object       | Inference | Size (Depth x Width) | Primitives   | 
++------------+------------------+-----------+----------------------+--------------+
+|test_env    | inst_DEC/mem_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1345.848 ; gain = 841.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1513.027 ; gain = 1008.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1513.027 ; gain = 1008.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1513.027 ; gain = 1008.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1513.027 ; gain = 1008.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1513.027 ; gain = 1008.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1513.027 ; gain = 1008.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    53|
+|3     |LUT1     |     4|
+|4     |LUT2     |    39|
+|5     |LUT3     |    78|
+|6     |LUT4     |    32|
+|7     |LUT5     |    97|
+|8     |LUT6     |   109|
+|9     |MUXF7    |    48|
+|10    |RAM32M   |    10|
+|11    |RAM32X1D |     4|
+|12    |FDRE     |    68|
+|13    |IBUF     |     5|
+|14    |OBUF     |    31|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1513.027 ; gain = 1008.590
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1513.027 ; gain = 928.074
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1513.027 ; gain = 1008.590
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1522.227 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 115 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1525.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete | Checksum: a78ec215
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 53 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1525.902 ; gain = 1228.238
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1525.902 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/faculta/An2sem2/ac/test_env/test_env.runs/synth_1/test_env.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file test_env_utilization_synth.rpt -pb test_env_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 24 15:25:33 2026...
