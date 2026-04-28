@@ -1,20 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="msi" Host="DESKTOP-RUN61G9" Pid="17152" HostCore="16" HostMemory="017069846528">
+    <Process Command="vivado.bat" Owner="msi" Host="DESKTOP-RUN61G9" Pid="16712" HostCore="16" HostMemory="017069846528">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="msi" Host="DESKTOP-RUN61G9" Pid="8124" HostCore="16" HostMemory="017069846528">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="msi" Host="DESKTOP-RUN61G9" Pid="28624" HostCore="16" HostMemory="017069846528">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="msi" Host="DESKTOP-RUN61G9" Pid="33464" HostCore="16" HostMemory="017069846528">
+    <Process Command="vivado.bat" Owner="msi" Host="DESKTOP-RUN61G9" Pid="11776" HostCore="16" HostMemory="017069846528">
     </Process>
 </ProcessHandle>

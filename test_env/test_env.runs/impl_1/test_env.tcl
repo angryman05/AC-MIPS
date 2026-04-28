@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "D:/faculta/An2sem2/ac/test_env/test_env.runs/impl_1/test_env.tcl"
+  variable script "D:/faculta/An2sem2/ac/AC-MIPS/test_env/test_env.runs/impl_1/test_env.tcl"
   variable category "vivado_impl"
 }
 
@@ -113,16 +113,16 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/faculta/An2sem2/ac/test_env/test_env.cache/wt [current_project]
-  set_property parent.project_path D:/faculta/An2sem2/ac/test_env/test_env.xpr [current_project]
-  set_property ip_output_repo D:/faculta/An2sem2/ac/test_env/test_env.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/faculta/An2sem2/ac/AC-MIPS/test_env/test_env.cache/wt [current_project]
+  set_property parent.project_path D:/faculta/An2sem2/ac/AC-MIPS/test_env/test_env.xpr [current_project]
+  set_property ip_output_repo D:/faculta/An2sem2/ac/AC-MIPS/test_env/test_env.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet D:/faculta/An2sem2/ac/test_env/test_env.runs/synth_1/test_env.dcp
+  add_files -quiet D:/faculta/An2sem2/ac/AC-MIPS/test_env/test_env.runs/synth_1/test_env.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/imports/Downloads/NexysA7_test_env.xdc
-  read_xdc D:/faculta/An2sem2/ac/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc
+  read_xdc D:/faculta/An2sem2/ac/AC-MIPS/test_env/test_env.srcs/constrs_1/imports/Downloads/NexysA7_test_env.xdc
+  read_xdc D:/faculta/An2sem2/ac/AC-MIPS/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/faculta/An2sem2/ac/test_env/test_env.runs/synth_1'
+HD_PWD='D:/faculta/An2sem2/ac/AC-MIPS/test_env/test_env.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

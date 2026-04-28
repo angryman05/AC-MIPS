@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="68" Path="D:/faculta/An2sem2/ac/test_env/test_env.xpr">
+<Project Product="Vivado" Version="7" Minor="68" Path="D:/faculta/An2sem2/ac/AC-MIPS/test_env/test_env.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="84c08f00c7c841689079524e28cb180f"/>

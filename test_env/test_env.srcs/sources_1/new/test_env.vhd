@@ -123,6 +123,8 @@ signal sig_PCSrc : STD_LOGIC;
 signal sig_JumpAddress : STD_LOGIC_VECTOR(31 downto 0);
 signal sig_WD : STD_LOGIC_VECTOR(31 downto 0);
 
+signal core_en : std_logic;
+
 begin
 
 rst <= enable_cnt1;
@@ -135,6 +137,8 @@ mepegeu0: MPG port map(CLK => clk, btn => btn(0), en => enable_cnt0);
 
 mepegeu1: MPG port map(CLK => clk, btn => btn(1), en => enable_cnt1);
 mepegeu2: MPG port map(CLK => clk, btn => btn(2), en => enable_cnt2);
+
+core_en <= '1' when sw(15) = '1' else enable_cnt0;
 
 process(clk)
 begin
@@ -150,7 +154,7 @@ end process;
 
 inst_IF : IFetch port map(
     clk => clk,
-    en => enable_cnt0,            
+    en => core_en,            
     jmp => Jump,             
     pcsrc => sig_PCSrc,             
     JAddr => sig_JumpAddress,       
@@ -174,7 +178,7 @@ inst_MC : MainControl port map(
 );
 
 -- Protectie suplimentara ca RF sa nu scrie aiurea, ci doar la activarea butonului
-RegWrite_en <= RegWrite and enable_cnt0;
+RegWrite_en <= RegWrite and core_en;
 
 inst_DEC : IDecoder port map(
     clk => clk,
@@ -206,7 +210,7 @@ Ex_inst: inst_EX port map(
 
 ram_mem: MEM port map(
     clk => clk,
-    en => enable_cnt2,
+    en => core_en,
     ALUResIn => ALURes,
     RD2 => sig_RD2,
     MemWrite => MemWrite,

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Fri Apr 24 15:26:18 2026
+| Date         : Tue Apr 28 23:11:02 2026
 | Host         : DESKTOP-RUN61G9 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file test_env_control_sets_placed.rpt
 | Design       : test_env
@@ -61,7 +61,7 @@ Table of Contents
 | No           | No                    | No                     |              35 |           11 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              20 |           11 |
+| Yes          | No                    | No                     |              20 |           12 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |              13 |            7 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -74,8 +74,8 @@ Table of Contents
 |  Clock Signal  |     Enable Signal     |  Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+-----------------------+-------------------+------------------+----------------+--------------+
 |  clk_IBUF_BUFG | mepegeu0/eqOp         |                   |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | mepegeu0/enable_cnt0  | mepegeu0/Q3_reg_0 |                7 |             13 |         1.86 |
-|  clk_IBUF_BUFG | mepegeu0/enable_cnt0  |                   |               10 |             19 |         1.90 |
+|  clk_IBUF_BUFG | mepegeu0/Q3_reg_0     | mepegeu0/Q2_reg_0 |                7 |             13 |         1.86 |
+|  clk_IBUF_BUFG | mepegeu0/Q3_reg_0     |                   |               11 |             19 |         1.73 |
 |  clk_IBUF_BUFG |                       |                   |               11 |             35 |         3.18 |
 |  clk_IBUF_BUFG | inst_IF/RegWrite0_out |                   |               11 |             88 |         8.00 |
 +----------------+-----------------------+-------------------+------------------+----------------+--------------+
