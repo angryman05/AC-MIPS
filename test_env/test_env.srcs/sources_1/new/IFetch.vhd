@@ -20,7 +20,7 @@ type tRom is array(0 to 255) of STD_LOGIC_VECTOR(31 downto 0);
 signal rom : tRom := 
 (
 -- suma divizorilor unui numar, se calculeaza cu teorema impartirii cu rest
-B"001000_00000_00001_0000000000000100",-- 0:  addi $1, $0, 15
+B"001000_00000_00001_0000000000000100",-- 0:  addi $1, $0, 4
 B"000000_00000_00000_00010_00000_100000", -- 1:  add  $2, $0, $0
 B"001000_00000_00011_0000000000000001", -- 2:  addi $3, $0, 1
 B"000000_00001_00011_00101_00000_101010", -- 3:  slt  $5, $1, $3   (Eticheta loop_ext)
