@@ -54,7 +54,7 @@ begin
     begin
         -- Setam switch-ul 6 pe 1 ca sa vedem RD1 pe display
         sw(6) <= '1';
-        
+        sw(15) <= '1';
         -- Daca ai inlocuit enable_cnt0 <= '1' in test_env, 
         -- procesorul ruleaza acum la viteza maxima!
         -- 300 de instructiuni * 10 ns = 3000 ns (3 microsecunde)

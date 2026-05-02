@@ -1,4 +1,4 @@
 Time resolution is 1 ps
 Failure: Simulare terminata cu succes!
-Time: 5 us  Iteration: 0  Process: /tb_mips/stim_proc  File: D:/faculta/An2sem2/ac/test_env/test_env.srcs/sim_1/new/test_env_sim.vhd
-$finish called at time : 5 us : File "D:/faculta/An2sem2/ac/test_env/test_env.srcs/sim_1/new/test_env_sim.vhd" Line 65
+Time: 5 us  Iteration: 0  Process: /tb_mips/stim_proc  File: C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/sim_1/new/test_env_sim.vhd
+$finish called at time : 5 us : File "C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/sim_1/new/test_env_sim.vhd" Line 65

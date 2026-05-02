@@ -35,23 +35,23 @@ with alusrc select
 process(ALUOp,func)
 begin
     case ALUOp is
-        when "000" => -- R-Type
+        when "000" => -- de tip r
             case func is
-                when "100000" => ALUCtrl <= "000"; -- add (MIPS standard)
-                when "100010" => ALUCtrl <= "001"; -- sub (MIPS standard)
-                when "000000" => ALUCtrl <= "010"; -- sll (MIPS standard)
-                when "000010" => ALUCtrl <= "011"; -- srl (MIPS standard)
-                when "100100" => ALUCtrl <= "100"; -- and (MIPS standard)
-                when "100101" => ALUCtrl <= "101"; -- or  (MIPS standard)
-                when "100110" => ALUCtrl <= "110"; -- xor (MIPS standard)
-                when "101010" => ALUCtrl <= "111"; -- slt (MIPS standard)
-                when others => ALUCtrl <= (others => '0'); -- Siguranta
+                when "100000" => ALUCtrl <= "000"; -- add 
+                when "100010" => ALUCtrl <= "001"; -- sub 
+                when "000000" => ALUCtrl <= "010"; -- sll 
+                when "000010" => ALUCtrl <= "011"; -- srl 
+                when "100100" => ALUCtrl <= "100"; -- and 
+                when "100101" => ALUCtrl <= "101"; -- or  
+                when "100110" => ALUCtrl <= "110"; -- xor 
+                when "101010" => ALUCtrl <= "111"; -- slt 
+                when others => ALUCtrl <= (others => '0');
             end case;
         
-        when "001" => ALUCtrl <= "000"; -- + (Pentru ADDI, LW, SW)
-        when "010" => ALUCtrl <= "001"; -- - (Pentru BEQ, BNE)
-        when "101" => ALUCtrl <= "100"; -- & (And Imediat)
-        when "110" => ALUCtrl <= "101"; -- | (Or Imediat)
+        when "001" => ALUCtrl <= "000"; -- +
+        when "010" => ALUCtrl <= "001"; -- -
+        when "101" => ALUCtrl <= "100"; -- &
+        when "110" => ALUCtrl <= "101"; -- |
         when others => ALUCtrl <= (others => '0'); 
     end case;
 end process;

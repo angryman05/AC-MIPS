@@ -21,10 +21,10 @@ architecture Behavioral of IDecoder is
 type rf_type is array(0 to 31) of std_logic_vector(31 downto 0);
 signal mem : rf_type:= (others => X"00000000");
 
-signal ra1 : std_logic_vector(4 downto 0); -- Read Address 1
-signal ra2 : std_logic_vector(4 downto 0); -- Read Address 2
-signal wa : std_logic_vector(4 downto 0); -- Write Address
-signal regwr : std_logic; -- comanda RegWrite
+signal ra1 : std_logic_vector(4 downto 0); 
+signal ra2 : std_logic_vector(4 downto 0); 
+signal wa : std_logic_vector(4 downto 0); 
+signal regwr : std_logic; 
 signal ExtUnit : std_logic_vector(31 downto 0);
 signal x1 : std_logic_vector(4 downto 0);
 signal x2 : std_logic_vector(4 downto 0);
@@ -64,12 +64,12 @@ process(clk)
 begin
      if rising_edge(clk) then
         if RegWrite = '1' then
-            mem(conv_integer(wa)) <= WD; -- scriere sincronă
+            mem(conv_integer(wa)) <= WD;
         end if;
      end if;
 end process;
 
-rd1 <= mem(conv_integer(ra1)); -- citire asincronă
-rd2 <= mem(conv_integer(ra2)); -- citire asincronă
+rd1 <= mem(conv_integer(ra1)); 
+rd2 <= mem(conv_integer(ra2)); 
 
 end Behavioral;

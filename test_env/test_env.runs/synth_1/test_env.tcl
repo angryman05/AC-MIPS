@@ -56,6 +56,10 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 3
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -91,9 +95,6 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 read_xdc C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/constrs_1/imports/Downloads/NexysA7_test_env.xdc
 set_property used_in_implementation false [get_files C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/constrs_1/imports/Downloads/NexysA7_test_env.xdc]
-
-read_xdc C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc
-set_property used_in_implementation false [get_files C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 

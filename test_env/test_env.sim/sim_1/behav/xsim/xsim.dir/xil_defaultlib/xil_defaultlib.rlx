@@ -2,12 +2,12 @@
 2020.2
 Nov  8 2024
 22:36:57
-D:/faculta/An2sem2/ac/test_env/test_env.srcs/sim_1/new/test_env_sim.vhd,1777031659,vhdl,,,,tb_mips,,,,,,,,
-D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/IDecoder.vhd,1777031965,vhdl,,,,idecoder,,,,,,,,
-D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/IFetch.vhd,1777033190,vhdl,,,,ifetch,,,,,,,,
-D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MEM.vhd,1777030646,vhdl,,,,mem,,,,,,,,
-D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MPG.vhd,1772530587,vhdl,,,,mpg,,,,,,,,
-D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/MainControl.vhd,1776602247,vhdl,,,,maincontrol,,,,,,,,
-D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/SSD.vhd,1777031841,vhdl,,,,ssd,,,,,,,,
-D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/inst_EX.vhd,1777033068,vhdl,,,,inst_ex,,,,,,,,
-D:/faculta/An2sem2/ac/test_env/test_env.srcs/sources_1/new/test_env.vhd,1777032292,vhdl,,,,test_env,,,,,,,,
+C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/sim_1/new/test_env_sim.vhd,1777733189,vhdl,,,,tb_mips,,,,,,,,
+C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/sources_1/new/IDecoder.vhd,1777731912,vhdl,,,,idecoder,,,,,,,,
+C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/sources_1/new/IFetch.vhd,1777731480,vhdl,,,,ifetch,,,,,,,,
+C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/sources_1/new/MEM.vhd,1777536235,vhdl,,,,mem,,,,,,,,
+C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/sources_1/new/MPG.vhd,1777536235,vhdl,,,,mpg,,,,,,,,
+C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/sources_1/new/MainControl.vhd,1777733145,vhdl,,,,maincontrol,,,,,,,,
+C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/sources_1/new/SSD.vhd,1777536235,vhdl,,,,ssd,,,,,,,,
+C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/sources_1/new/inst_EX.vhd,1777731928,vhdl,,,,inst_ex,,,,,,,,
+C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/sources_1/new/test_env.vhd,1777731842,vhdl,,,,test_env,,,,,,,,

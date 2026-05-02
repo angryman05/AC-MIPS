@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Thu Apr 30 11:08:26 2026
+| Date         : Sat May  2 18:34:10 2026
 | Host         : DESKTOP-R012G9C running 64-bit major release  (build 9200)
 | Command      : report_methodology -file test_env_methodology_drc_routed.rpt -pb test_env_methodology_drc_routed.pb -rpx test_env_methodology_drc_routed.rpx
 | Design       : test_env
@@ -23,14 +23,13 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 66
-+-----------+----------+------------------------------------------------------+--------+
-| Rule      | Severity | Description                                          | Checks |
-+-----------+----------+------------------------------------------------------+--------+
-| TIMING-16 | Warning  | Large setup violation                                | 13     |
-| TIMING-18 | Warning  | Missing input or output delay                        | 52     |
-| XDCC-4    | Warning  | User Clock constraint overwritten with the same name | 1      |
-+-----------+----------+------------------------------------------------------+--------+
+             Checks found: 65
++-----------+----------+-------------------------------+--------+
+| Rule      | Severity | Description                   | Checks |
++-----------+----------+-------------------------------+--------+
+| TIMING-16 | Warning  | Large setup violation         | 13     |
+| TIMING-18 | Warning  | Missing input or output delay | 52     |
++-----------+----------+-------------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
@@ -357,13 +356,6 @@ Related violations: <none>
 TIMING-18#52 Warning
 Missing input or output delay  
 An output delay is missing on led[9] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
-Related violations: <none>
-
-XDCC-4#1 Warning
-User Clock constraint overwritten with the same name  
-A new clock constraint create_clock overrides a previous user clock constraint with the same name.
-New: create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports clk] (Source: C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/constrs_1/new/NexysA7_test_new.xdc (Line: 9))
-Previous: create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 5.000} -add [get_ports clk] (Source: C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/constrs_1/imports/Downloads/NexysA7_test_env.xdc (Line: 9))
 Related violations: <none>
 
 

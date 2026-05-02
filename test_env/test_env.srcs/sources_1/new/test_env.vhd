@@ -52,7 +52,6 @@ component IDecoder is
            sa : out std_logic_vector(4 downto 0));
 end component;
 
--- COMPONENTA NOUA: Main Control
 component MainControl is
     Port ( Opcode : in STD_LOGIC_VECTOR (5 downto 0);
            RegDst : out STD_LOGIC;
@@ -106,7 +105,6 @@ signal sig_func : STD_LOGIC_VECTOR(5 downto 0);
 signal sig_sa : STD_LOGIC_VECTOR(4 downto 0);
 signal sig_Ext_func, sig_Ext_sa : STD_LOGIC_VECTOR(31 downto 0);
 
--- SEMNALE NOI DE CONTROL
 signal RegDst, ExtOp, ALUSrc, Branch, Jump, MemWrite, MemtoReg, RegWrite : STD_LOGIC;
 signal ALUOp : STD_LOGIC_VECTOR(2 downto 0);
 signal RegWrite_en : STD_LOGIC;
@@ -163,9 +161,8 @@ inst_IF : IFetch port map(
     pc_1 => sig_pc_1
 );
 
--- MAPARE MAIN CONTROL
 inst_MC : MainControl port map(
-    Opcode => sig_instruction(31 downto 26), -- Primii 6 biti!
+    Opcode => sig_instruction(31 downto 26), 
     RegDst => RegDst,
     ExtOp => ExtOp,
     ALUSrc => ALUSrc,
@@ -177,7 +174,7 @@ inst_MC : MainControl port map(
     RegWrite => RegWrite
 );
 
--- Protectie suplimentara ca RF sa nu scrie aiurea, ci doar la activarea butonului
+--sa scrie in rf numa la buton
 RegWrite_en <= RegWrite and core_en;
 
 inst_DEC : IDecoder port map(
@@ -222,7 +219,6 @@ sig_sum <= sig_RD1 + sig_RD2;
 sig_Ext_func <= "00000000000000000000000000" & sig_func;
 sig_Ext_sa <= "000000000000000000000000000" & sig_sa;
 
--- MUX pentru SSD (la fel ca inainte)
 process(sw, sig_instruction, sig_pc_1, sig_RD1, sig_RD2, sig_ext_imm, sig_sum, sig_Ext_func, sig_Ext_sa)
 begin
     case sw(7 downto 5) is
@@ -243,17 +239,12 @@ with memtoreg select
           aluresout when '0',
           (others => 'X') when others;
 
--- Logica de Branch (Poza 3)
 sig_PCSrc <= (not zero) and branch;
 
--- Logica de Jump (Poza 3 adaptata la 32 de biti adresati la cuvant)
 sig_JumpAddress <= sig_pc_1(31 downto 26) & sig_instruction(25 downto 0);
 
--- AFISARE SEMNALE CONTROL PE LED-uri (conform instructiunilor din poza)
--- led(10 downto 0) vor arata direct ce a decis Control Unit-ul
 led(10 downto 0) <= ALUOp & RegDst & ExtOp & ALUSrc & Branch & Jump & MemWrite & MemtoReg & RegWrite;
 
--- Restul LED-urilor le tinem pe 0
 led(15 downto 11) <= (others => '0');
 
 end Behavioral;
