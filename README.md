@@ -110,4 +110,4 @@ Proiectul a fost dezvoltat și simulat folosind **Xilinx Vivado**.
 *Universitatea Tehnică din Cluj-Napoca (UTCN)*  
 *Facultatea de Automatică și Calculatoare (CTI)*
 
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/numele-tau-de-utilizator)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github)](https://github.com/angryman05)
