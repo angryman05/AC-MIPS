@@ -47,7 +47,7 @@ end process;
 
 process(clk)
 begin
-     if rising_edge(clk) then
+     if falling_edge(clk) then
         if RegWrite = '1' then
             mem(conv_integer(WA)) <= WD; 
         end if;

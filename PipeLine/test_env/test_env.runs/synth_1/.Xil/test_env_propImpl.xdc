@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Facultate/An2sem2/AC/PIPELINE_MIPS32_Simionescu_Robert_Alexandru_30228/test_env/test_env.srcs/constrs_1/imports/Downloads/NexysA7_test_env.xdc rfile:../../../test_env.srcs/constrs_1/imports/Downloads/NexysA7_test_env.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.srcs/constrs_1/imports/Downloads/NexysA7_test_env.xdc rfile:../../../test_env.srcs/constrs_1/imports/Downloads/NexysA7_test_env.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports {clk}];
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]

@@ -3,88 +3,230 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon May  4 18:30:00 2026
-# Process ID         : 17128
-# Current directory  : C:/Facultate/An2sem2/AC/PIPELINE_MIPS32_Simionescu_Robert_Alexandru_30228/test_env
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent21524 C:\Facultate\An2sem2\AC\PIPELINE_MIPS32_Simionescu_Robert_Alexandru_30228\test_env\test_env.xpr
-# Log file           : C:/Facultate/An2sem2/AC/PIPELINE_MIPS32_Simionescu_Robert_Alexandru_30228/test_env/vivado.log
-# Journal file       : C:/Facultate/An2sem2/AC/PIPELINE_MIPS32_Simionescu_Robert_Alexandru_30228/test_env\vivado.jou
-# Running On         : DESKTOP-R012G9C
+# Start of session at: Wed May 13 17:20:20 2026
+# Process ID         : 37588
+# Current directory  : D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent39736 D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.xpr
+# Log file           : D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/vivado.log
+# Journal file       : D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env\vivado.jou
+# Running On         : DESKTOP-RUN61G9
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
-# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics         
-# CPU Frequency      : 3294 MHz
-# CPU Physical cores : 6
-# CPU Logical cores  : 12
-# Host memory        : 17024 MB
-# Swap memory        : 16642 MB
-# Total Virtual      : 33667 MB
-# Available Virtual  : 17734 MB
+# Processor Detail   : Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz
+# CPU Frequency      : 3792 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 17069 MB
+# Swap memory        : 6442 MB
+# Total Virtual      : 23512 MB
+# Available Virtual  : 5543 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Facultate/An2sem2/AC/PIPELINE_MIPS32_Simionescu_Robert_Alexandru_30228/test_env/test_env.xpr
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'C:/Facultate/An2sem2/AC/PIPELINE_MIPS32_Simionescu_Robert_Alexandru_30228/test_env'
-INFO: [Project 1-313] Project file moved from 'C:/Facultate/An2sem2/AC/MIPS32_Simionescu_Robert_Alexandru_30228/test_env' since last save.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Facultate/An2sem2/AC/PIPELINE_MIPS32_Simionescu_Robert_Alexandru_30228/test_env/test_env.gen/sources_1'.
+open_project D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Facultate/An2sem2/AC/PIPELINE_MIPS32_Simionescu_Robert_Alexandru_30228/test_env' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
 update_compile_order -fileset sources_1
-echo "hello"
-WARNING: [Common 17-259] Unknown Tcl command 'echo hello' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
-hello
-exec fastfetch.exe
-/////////////////  /////////////////
-/////////////////  /////////////////
-/////////////////  /////////////////
-/////////////////  /////////////////
-/////////////////  /////////////////
-/////////////////  /////////////////
-/////////////////  /////////////////
-/////////////////  /////////////////
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.srcs/utils_1/imports/synth_1/test_env.dcp with file D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/synth_1/test_env.dcp
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed May 13 18:02:21 2026] Launched synth_1...
+Run output will be captured here: D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/synth_1/runme.log
+[Wed May 13 18:02:21 2026] Launched impl_1...
+Run output will be captured here: D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
 
-/////////////////  /////////////////
-/////////////////  /////////////////
-/////////////////  /////////////////
-/////////////////  /////////////////
-/////////////////  /////////////////
-/////////////////  /////////////////
-/////////////////  /////////////////
-/////////////////  /////////////////[1G[16A[40CRobi@DESKTOP-R012G9C
-[40C--------------------
-[40COS: Windows 11 Home (25H2) x86_64
-[40CHost: 82JU (Legion 5 15ACH6H)
-[40CKernel: WIN32_NT 10.0.26200.8246
-[40CUptime: 6 days, 5 hours, 8 mins
-[40CShell: vivado
-[40CDisplay (BOE0A1C): 1920x1080 in 16", 165 Hz [Built-in]
-[40CWM: Desktop Window Manager 10.0.26100.8115
-[40CWM Theme: Custom - #680081 (System: Dark, Apps: Dark)
-[40CTheme: Fluent
-[40CIcons: Recycle Bin
-[40CFont: Segoe UI (12pt) [Caption / Menu / Message / Status]
-[40CCursor: Windows Aero (32px)
-[40CTerminal: Windows Console 10.0.26100.8115
-[40CCPU: AMD Ryzen 5 5600H (12) @ 4.25 GHz
-[40CGPU: NVIDIA GeForce RTX 3060 Laptop GPU @ 2.10 GHz (5.86 GiB) [Discrete]
-[40CMemory: 9.80 GiB / 15.86 GiB (62%)
-[40CSwap: 562.77 MiB / 15.50 GiB (4%)
-[40CDisk (C:\): 447.40 GiB / 475.61 GiB (94%) - NTFS
-[40CDisk (G:\): 448.81 GiB / 475.61 GiB (94%) - FAT32
-[40CLocal IP (WiFi): 192.168.0.100/24
-[40CBattery (CRB Battery 0): 69% (2 hours, 12 mins remaining) [Discharging]
-[40CLocale: ro-RO
-[40C
-[40C[40m   [41m   [42m   [43m   [44m   [45m   [46m   [47m   [m
-[40C[100m   [101m   [102m   [103m   [104m   [105m   [106m   [107m   [m
-exec clear
-couldn't execute "clear": no such file or directory
-clear
-invalid command name "clear"
-clc
-invalid command name "clc"
-exit
-INFO: [Common 17-206] Exiting Vivado at Mon May  4 19:41:18 2026...
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-20:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1221.453 ; gain = 14.266
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AA7607A
+set_property PROGRAM.FILE {D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/impl_1/test_env.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/impl_1/test_env.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.srcs/utils_1/imports/synth_1/test_env.dcp with file D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/synth_1/test_env.dcp
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\test_env.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IDecoder.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\faculta\An2sem2\ac\AC-MIPS\PipeLine\test_env\test_env.srcs\sources_1\new\IFetch.vhd:]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed May 13 18:20:37 2026] Launched synth_1...
+Run output will be captured here: D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/synth_1/runme.log
+[Wed May 13 18:20:37 2026] Launched impl_1...
+Run output will be captured here: D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 30 2024-20:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1252.488 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AA7607A
+set_property PROGRAM.FILE {D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/impl_1/test_env.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/impl_1/test_env.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/impl_1/test_env.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/impl_1/test_env.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
