@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/sources_1/new/MainControl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MainControl'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.srcs/sim_1/new/test_env_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_mips'
