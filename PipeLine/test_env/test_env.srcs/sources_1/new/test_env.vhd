@@ -126,8 +126,6 @@ signal MemData_MEM_WB, ALURes_MEM_WB : std_logic_vector(31 downto 0);
 signal wa_MEM_WB : std_logic_vector(4 downto 0);
 signal MemtoReg_MEM_WB, RegWrite_MEM_WB : STD_LOGIC;
 
-signal ForwardA, ForwardB : std_logic_vector(1 downto 0);
-signal ALU_in_A, ALU_in_B_fwd : std_logic_vector(31 downto 0);
 
 begin
 
@@ -137,17 +135,29 @@ mepegeu0: MPG port map(CLK => clk, btn => btn(0), en => enable_cnt0);
 core_en <= '1' when sw(15) = '1' else enable_cnt0;
 
 inst_IF : IFetch port map(
-    clk => clk, en => core_en, jmp => Jump, pcsrc => sig_PCSrc, 
-    JAddr => sig_JumpAddress, Baddr => BranchAddress_EX_MEM, 
-    instruction => sig_instruction, pc_1 => sig_pc_1
+    clk => clk, 
+    en => core_en, 
+    jmp => Jump, 
+    pcsrc => sig_PCSrc, 
+    JAddr => sig_JumpAddress, 
+    Baddr => BranchAddress_EX_MEM, 
+    instruction => sig_instruction, 
+    pc_1 => sig_pc_1
 );
 
 sig_JumpAddress <= PCInc_IF_ID(31 downto 26) & Instruction_IF_ID(25 downto 0);
 
 inst_MC : MainControl port map(
     Opcode => Instruction_IF_ID(31 downto 26), 
-    RegDst => RegDst, ExtOp => ExtOp, ALUSrc => ALUSrc, Branch => Branch, Jump => Jump, 
-    ALUOp => ALUOp, MemWrite => MemWrite, MemtoReg => MemtoReg, RegWrite => RegWrite
+    RegDst => RegDst, 
+    ExtOp => ExtOp, 
+    ALUSrc => ALUSrc, 
+    Branch => Branch, 
+    Jump => Jump, 
+    ALUOp => ALUOp, 
+    MemWrite => MemWrite, 
+    MemtoReg => MemtoReg, 
+    RegWrite => RegWrite
 );
 
 inst_DEC : IDecoder port map(
@@ -155,14 +165,19 @@ inst_DEC : IDecoder port map(
     RegWrite => RegWrite_MEM_WB, 
     Instr => Instruction_IF_ID(25 downto 0), 
     WA => wa_MEM_WB,             
-    ExtOp => ExtOp, WD => sig_WD, RD1 => sig_RD1, RD2 => sig_RD2, 
-    ext_imm => sig_ext_imm, func => sig_func, sa => sig_sa
+    ExtOp => ExtOp,
+    WD => sig_WD, 
+    RD1 => sig_RD1, 
+    RD2 => sig_RD2, 
+    ext_imm => sig_ext_imm, 
+    func => sig_func, 
+    sa => sig_sa
 );
 
 Ex_inst: inst_EX port map(
     PCinc => PCInc_ID_EX,
-    RD1 => ALU_in_A, 
-    RD2 => ALU_in_B_fwd, 
+    RD1 => RD1_ID_EX, 
+    RD2 => RD2_ID_EX, 
     Ext_Imm => Ext_imm_ID_EX, 
     func => func_ID_EX, 
     sa => sa_ID_EX, 
@@ -174,9 +189,13 @@ Ex_inst: inst_EX port map(
 );
 
 ram_mem: MEM port map(
-    clk => clk, en => core_en, 
-    ALUResIn => ALURes_EX_MEM, RD2 => RD2_EX_MEM, MemWrite => MemWrite_EX_MEM, 
-    MemData => memdata, ALUResOut => aluresout   
+    clk => clk, 
+    en => core_en, 
+    ALUResIn => ALURes_EX_MEM, 
+    RD2 => RD2_EX_MEM, 
+    MemWrite => MemWrite_EX_MEM, 
+    MemData => memdata, 
+    ALUResOut => aluresout   
 );
 
 sig_PCSrc <= (not zero_EX_MEM) and Branch_EX_MEM;
@@ -213,7 +232,7 @@ begin
 
         BranchAddress_EX_MEM <= BranchAddress;
         ALURes_EX_MEM <= ALURes;
-        RD2_EX_MEM <= ALU_in_B_fwd; 
+        RD2_EX_MEM <= RD2_ID_EX; 
         zero_EX_MEM <= zero;
         
         if RegDst_ID_EX = '1' then
@@ -236,37 +255,7 @@ begin
     end if;
 end process;
 
-process(RegWrite_EX_MEM, wa_EX_MEM, rs_ID_EX, RegWrite_MEM_WB, wa_MEM_WB)
-begin
-    if (RegWrite_EX_MEM = '1' and wa_EX_MEM /= "00000" and wa_EX_MEM = rs_ID_EX) then
-        ForwardA <= "10"; 
-    elsif (RegWrite_MEM_WB = '1' and wa_MEM_WB /= "00000" and wa_MEM_WB = rs_ID_EX) then
-        ForwardA <= "01"; 
-    else
-        ForwardA <= "00"; 
-    end if;
-end process;
 
-process(RegWrite_EX_MEM, wa_EX_MEM, rt_ID_EX, RegWrite_MEM_WB, wa_MEM_WB)
-begin
-    if (RegWrite_EX_MEM = '1' and wa_EX_MEM /= "00000" and wa_EX_MEM = rt_ID_EX) then
-        ForwardB <= "10"; 
-    elsif (RegWrite_MEM_WB = '1' and wa_MEM_WB /= "00000" and wa_MEM_WB = rt_ID_EX) then
-        ForwardB <= "01"; 
-    else
-        ForwardB <= "00"; 
-    end if;
-end process;
-
-with ForwardA select
-    ALU_in_A <= ALURes_EX_MEM when "10",
-                sig_WD        when "01",
-                RD1_ID_EX     when others;
-
-with ForwardB select
-    ALU_in_B_fwd <= ALURes_EX_MEM when "10",
-                    sig_WD        when "01",
-                    RD2_ID_EX     when others;
 
 process(sw, sig_instruction, PCInc_IF_ID, sig_RD1, sig_RD2, sig_ext_imm, ALURes_EX_MEM, memdata)
 begin

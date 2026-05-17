@@ -126,7 +126,6 @@ signal core_en : std_logic;
 begin
 
 rst <= enable_cnt1;
-
 display: SSD port map(clk => clk,digits => digit,an => an,cat => cat);
 
 mepegeu0: MPG port map(CLK => clk, btn => btn(0), en => enable_cnt0);

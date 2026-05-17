@@ -3,31 +3,30 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu Apr 30 11:04:22 2026
-# Process ID         : 12556
-# Current directory  : C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent5216 C:\Facultate\An2sem2\AC\repo\AC-MIPS\test_env\test_env.xpr
-# Log file           : C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/vivado.log
-# Journal file       : C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env\vivado.jou
-# Running On         : DESKTOP-R012G9C
+# Start of session at: Sun May 17 15:32:53 2026
+# Process ID         : 2604
+# Current directory  : D:/faculta/An2sem2/ac/AC-MIPS/Single_Cycle/test_env
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent6096 D:\faculta\An2sem2\ac\AC-MIPS\Single_Cycle\test_env\test_env.xpr
+# Log file           : D:/faculta/An2sem2/ac/AC-MIPS/Single_Cycle/test_env/vivado.log
+# Journal file       : D:/faculta/An2sem2/ac/AC-MIPS/Single_Cycle/test_env\vivado.jou
+# Running On         : DESKTOP-RUN61G9
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
-# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics         
-# CPU Frequency      : 3294 MHz
-# CPU Physical cores : 6
-# CPU Logical cores  : 12
-# Host memory        : 17024 MB
-# Swap memory        : 16642 MB
-# Total Virtual      : 33667 MB
-# Available Virtual  : 16353 MB
+# Processor Detail   : Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz
+# CPU Frequency      : 3792 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 17069 MB
+# Swap memory        : 7516 MB
+# Total Virtual      : 24586 MB
+# Available Virtual  : 8632 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.xpr
+open_project D:/faculta/An2sem2/ac/AC-MIPS/Single_Cycle/test_env/test_env.xpr
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 6
-wait_on_run impl_1
-open_run impl_1
-close_design
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-close_design
+create_project pregatire1 D:/faculta/An2sem2/ac/pregatire_colocviu/pregatire1 -part xc7a100tcsg324-1
+file mkdir D:/faculta/An2sem2/ac/pregatire_colocviu/pregatire1/pregatire1.srcs/sources_1/new
+close [ open D:/faculta/An2sem2/ac/pregatire_colocviu/pregatire1/pregatire1.srcs/sources_1/new/ex.vhd w ]
+add_files D:/faculta/An2sem2/ac/pregatire_colocviu/pregatire1/pregatire1.srcs/sources_1/new/ex.vhd
+update_compile_order -fileset sources_1
+close_project

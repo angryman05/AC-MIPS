@@ -52,17 +52,25 @@ begin
     -- Aici scriem scenariul testului
     stim_proc: process
     begin
-        -- Setam switch-ul 6 pe 1 ca sa vedem RD1 pe display
-        sw(6) <= '1';
+        -- Setam sw(15) pe 1 ca sa dam bypass la buton. 
+        -- Astfel, semnalul core_en din test_env devine '1' continuu.
         sw(15) <= '1';
-        -- Daca ai inlocuit enable_cnt0 <= '1' in test_env, 
-        -- procesorul ruleaza acum la viteza maxima!
-        -- 300 de instructiuni * 10 ns = 3000 ns (3 microsecunde)
-        -- Asteptam 5 microsecunde ca sa fim 100% siguri ca termina algoritmul.
-        wait for 5 us;
+        
+        -- Conform MUX-ului tau din test_env, vrem sa vedem semnalul sig_RD1 (unde se scrie suma)
+        -- pt asta, sw(7 downto 5) trebuie sa fie "010"
+        sw(7 downto 5) <= "010";
+        
+        -- Ne asiguram ca restul switch-urilor raman pe 0
+        sw(14 downto 8) <= (others => '0');
+        sw(4 downto 0) <= (others => '0');
+
+        -- Asteptam 10 microsecunde (1000 de cicli de ceas). 
+        -- E un timp generos pentru a acoperi toate executiile buclei tale pt n=4, 
+        -- luand in calcul si instruciunile NOP adaugate.
+        wait for 10 us;
         
         -- Oprim simularea (assert false este o metoda eleganta de a opri Vivado din loop)
-        assert false report "Simulare terminata cu succes!" severity failure;
+        assert false report "Simulare terminata cu succes! Verifica valoarea lui sig_RD1." severity failure;
     end process;
 
 end Behavioral;

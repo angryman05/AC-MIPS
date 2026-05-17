@@ -3,12 +3,12 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Sun May  3 14:47:11 2026
-# Process ID         : 21000
-# Current directory  : C:/Facultate/An2sem2/AC/MIPS32_Simionescu_Robert_Alexandru_30228/test_env
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent4640 C:\Facultate\An2sem2\AC\MIPS32_Simionescu_Robert_Alexandru_30228\test_env\test_env.xpr
-# Log file           : C:/Facultate/An2sem2/AC/MIPS32_Simionescu_Robert_Alexandru_30228/test_env/vivado.log
-# Journal file       : C:/Facultate/An2sem2/AC/MIPS32_Simionescu_Robert_Alexandru_30228/test_env\vivado.jou
+# Start of session at: Thu Apr 30 11:04:22 2026
+# Process ID         : 12556
+# Current directory  : C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent5216 C:\Facultate\An2sem2\AC\repo\AC-MIPS\test_env\test_env.xpr
+# Log file           : C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/vivado.log
+# Journal file       : C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env\vivado.jou
 # Running On         : DESKTOP-R012G9C
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26200
@@ -19,13 +19,15 @@
 # Host memory        : 17024 MB
 # Swap memory        : 16642 MB
 # Total Virtual      : 33667 MB
-# Available Virtual  : 11559 MB
+# Available Virtual  : 16353 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Facultate/An2sem2/AC/MIPS32_Simionescu_Robert_Alexandru_30228/test_env/test_env.xpr
+open_project C:/Facultate/An2sem2/AC/repo/AC-MIPS/test_env/test_env.xpr
 update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 6
 wait_on_run impl_1
 open_run impl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
 close_design

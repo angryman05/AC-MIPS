@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Wed May 13 18:21:30 2026
-# Process ID         : 35764
+# Start of session at: Sun May 17 15:02:19 2026
+# Process ID         : 20136
 # Current directory  : D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/impl_1
 # Command line       : vivado.exe -log test_env.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source test_env.tcl -notrace
 # Log file           : D:/faculta/An2sem2/ac/AC-MIPS/PipeLine/test_env/test_env.runs/impl_1/test_env.vdi
@@ -17,8 +17,8 @@
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 17069 MB
-# Swap memory        : 6442 MB
-# Total Virtual      : 23512 MB
-# Available Virtual  : 3021 MB
+# Swap memory        : 7516 MB
+# Total Virtual      : 24586 MB
+# Available Virtual  : 6480 MB
 #-----------------------------------------------------------
 source test_env.tcl -notrace
